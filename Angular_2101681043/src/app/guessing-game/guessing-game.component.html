@@ -1,0 +1,30 @@
+<h1>Guessing game</h1>
+<button (click)="newGame()">Start New Game</button>
+<main>
+    
+    @if(curentNumber()===0){
+        
+    }
+
+    @else{<p>Curent number</p>}
+    @if(curentNumber()===0){
+        <p>You lost</p>
+        <p>Your final score was: {{finalScore()}}</p>
+    }
+
+    @else{
+        <p>{{curentNumber()}}</p>
+    }
+    @if(curentNumber()===0){
+        
+    }
+
+    @else{
+        <p>Will the next number be </p>
+        <button (click)="guessIsHigher()">Higher</button>
+        <button (click)="guessIsLower()">Lower</button>
+        <p>Curent score: {{score()}}</p>
+    }
+   
+    
+</main>
